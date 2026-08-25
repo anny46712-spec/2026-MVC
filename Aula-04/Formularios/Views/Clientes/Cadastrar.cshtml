@@ -1,0 +1,118 @@
+@model MVC2026.Cliente
+@{
+    ViewData["Title"] = "Cadastro de Clientes";
+}
+
+<div class="container">
+
+    <h1 class="text-center mt-3 fw-bold">Cadastro de Cliente</h1>
+    
+    <form action="#" method="get">
+        <div class="row">
+            <div class="col-12 col-md-4 col-xl-3 mt-3">
+                <label asp-for="Id">Código</label>
+                <input type="number" 
+                        class="form-control" 
+                        placeholder="Código do Cliente..." 
+                        asp-for="Id">
+            </div>
+            <div class="col-12 col-md col-xl mt-3">
+                <label asp-for="Nome">Nome Completo</label>
+                <input type="text" 
+                        class="form-control" 
+                        placeholder="Nome Completo..." 
+                        asp-for="Nome">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg mt-3">
+                <label asp-for="CPF">CPF</label>
+                <input type="text" 
+                        class="form-control" 
+                        placeholder="999.999.999-99..." 
+                        asp-for="CPF">
+            </div>
+            <div class="col-12 col-md-6 col-lg mt-3">
+                <label asp-for="Celular">Celular</label>
+                <input type="text" 
+                        class="form-control" 
+                        placeholder="(99) 9.9999-9999..." 
+                        asp-for="Celular">
+            </div>
+            <div class="col-12 col-md-12 col-lg mt-3">
+                <label asp-for="DataNascimento">Data de Nascimento</label>
+                <input type="date" 
+                        class="form-control" 
+                        placeholder="Data de Nascimento..." 
+                        asp-for="DataNascimento">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-3">
+                <label asp-for="Email">E-mail</label>
+                <input type="email" 
+                        class="form-control" 
+                        placeholder="seunome@provedor.com..." 
+                        asp-for="Email">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-4 col-xl-3 mt-3">
+                <label asp-for="CEP">CEP</label>
+                <input type="text" 
+                        class="form-control" 
+                        placeholder="99.999-999..." 
+                        asp-for="CEP">
+            </div>
+            <div class="col-12 col-md col-xl mt-3">
+                <label asp-for="Endereco">Endereço</label>
+                <input type="text" 
+                        class="form-control" 
+                        placeholder="Nome do Logradouro, número..." 
+                        asp-for="Endereco">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-12 col-xl mt-3">
+                <label asp-for="Bairro">Bairro</label>
+                <input type="text" 
+                        class="form-control" 
+                        placeholder="Nome do bairro..." 
+                        asp-for="Bairro">
+            </div>
+            <div class="col-12 col-md col-xl mt-3">
+                <label asp-for="Cidade">Cidade</label>
+                <input type="text" 
+                        class="form-control" 
+                        placeholder="Nome da cidade ..." 
+                        asp-for="Cidade">
+            </div>
+            <div class="col-12 col-md-2 col-xl-2 mt-3">
+                <label asp-for="UF">UF</label>
+                <input type="text" 
+                        class="form-control" 
+                        placeholder="UF" 
+                        asp-for="UF">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <label asp-for="Observacao">Observações</label>
+                <textarea class="form-control" 
+                            rows="3"
+                            placeholder="Obesrvações..."
+                            asp-for="Observacao">
+                </textarea>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col text-center">
+                <input type="reset" value="Limpar" class="w-50 btn btn-outline-secondary"/>
+            </div>
+            <div class="col text-center">
+                <input type="submit" value="Enviar" class="w-50 btn btn-primary" />
+            </div>
+        </div>
+    </form>
+</div>
